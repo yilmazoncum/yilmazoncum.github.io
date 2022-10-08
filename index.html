@@ -4,31 +4,146 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Öncüm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Öncüm K. Yılmaz</title>
 </head>
 <body>
     <header class="header">
-        <img src="IMG-20220320-WA0010.jpg" class="profile-img">
         <h1 class="name">Öncüm Korkmaz Yılmaz</h1>
-        <hr>
+        <h2 class="title">Software Developer</h2>
     </header>
+    <div class="about">
+        <div class="profile-img-container">
+            <img src="IMG-20220320-WA0010.jpg" class="profile-img">
+        </div>
+        <div class="about-div">
+            <h2 class="about-h2">ABOUT</h2>
+            
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora rerum, est autem cupiditate, corporis a qui libero ipsum delectus quidem dolor at nulla, adipisci veniam in reiciendis aut asperiores omnis blanditiis quod quas laborum nam! Fuga ad tempora in aspernatur pariatur fugit quibusdam dolores sunt esse magni, ut, dignissimos.</p>
+
+        </div>
+    </div>
+
+    <!-- <div class="contact">
+
+        <h2 class="contact-h2">CONTACT</h2>
+        <div class="button-div">
+            <button>git</button>
+            <button>linkedin</button>
+            <button>mail</button>
+        </div>
+    </div> -->
 
 </body>
 </html>
 <style>
-    .profile-img {
-        border: 4px;
-        width: 20em;
-        height: 20em;
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        width: 98vw;
     }
     .name{
+        font-weight: 600;
         color:aliceblue;
-        font-size: 3em;
+        font-size: 5vw;
     }
-    .header{
+    .title{
+        font-weight:300;
+        color:aliceblue;
+        font-size: 2vw;
+    }
+
+
+    .about{
+        color:aliceblue;
+        height: 100vh;
+        width: 98vw;    
+    }
+
+    .profile-img-container{
         text-align: center;
+        vertical-align: middle;
+        padding-top: 10vh;
     }
+    
+    .about-div{
+        font-weight: 300;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 5vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+
+    }
+    .about-h2{
+        font-weight: 600;
+        font-size: 3vw;
+    }
+    .about-text{
+        font-size: 2vw ;
+    }
+
+    .profile-img {
+        border: 4px black solid;
+        width: 80%;
+    }
+
+    @media screen and (min-width: 600px) {
+        .profile-img-container {
+          width: 40%;
+          float: left;
+        }
+        .about-div {
+          width: 50%;
+          float: right;
+        }
+      }
+    
+
+
+
+
+
+
+
+      
+    .contact{
+        color:aliceblue;
+        height: 100vh;
+        width: 98vw;
+        text-align: center;
+        background-color: blueviolet;
+    }
+
+    .contact-h2{
+        font-weight: 600;
+        margin: 0 ;
+    }
+
+    .button-div{
+        margin-top: 25vh ;
+    }
+
+    button{
+        margin: 4vh;
+    }
+
+
     body{
+        font-family: 'Red Hat Mono', monospace;
         background-color: rgb(18,18,18);
+        margin: 0;
+        padding: 0;
     }
+
+    html {
+        font-size: 1em;
+        margin:0;
+        padding: 0;
+      }
 </style>
